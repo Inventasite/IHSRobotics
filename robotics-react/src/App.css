@@ -20,9 +20,19 @@ body {
 .logo {
   width: 10%;
   height: 10%;
+  margin-left: 300px;
 }
 
 .title {
   padding-top: 40px;
+}
+
+.tabs {
+  margin-left: -600px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46,26,71);
 }
 

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
