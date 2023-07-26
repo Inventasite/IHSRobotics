@@ -1,12 +1,7 @@
 import React from 'react';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import Independence from './Independence.png';
 import Typewriter from "typewriter-effect";
-import Home from "./pages/home";
-import Contacts from "./pages/contacts";
-import About from "./pages/about";
 
 function App() {
   
