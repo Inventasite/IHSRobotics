@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  background-image: url('roboticsBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(46,26,71);
+  font-size: xx-large;
+  display: inline-flex;
+  margin: auto;
+  width: 60%;
+  padding-top: 50px;
+  padding-left: 700px;
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+}
+
+.title {
+  padding-top: 40px;
+}
+

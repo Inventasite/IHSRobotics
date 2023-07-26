@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.14.2"
+  }
+}
