@@ -26,11 +26,14 @@ function App() {
                   .start();
               } } />
           </div>
-        </div>
+      </div>
 
-        <div className="Home"></div>
-        <div className="About"></div>
-        <div className="Contact"></div>
+      <div className="Home">
+        <div className = "Home1">
+        </div>
+      </div>
+      <div className="About"></div>
+      <div className="Contact"></div>
     </div>
   );
 }
