@@ -13,7 +13,7 @@ function App() {
             <a href=".Home">Home&nbsp;&nbsp;&nbsp;</a>
             <a href=".About">About&nbsp;&nbsp;&nbsp;</a>
             <a href=".Contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </nav>
+          </ nav>
         </div>
 
           <img className="logo" alt="logo" src={Independence} />
@@ -21,14 +21,16 @@ function App() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("| OVERDR!VE ROBOTICS")
+                  .typeString("OVERDR!VE ROBOTICS")
                   .pauseFor(1000)
                   .start();
               } } />
           </div>
         </div>
 
-        <div className="Home"></div>
+        <div className="Home">
+          Hello
+        </div>
         <div className="About"></div>
         <div className="Contact"></div>
     </div>

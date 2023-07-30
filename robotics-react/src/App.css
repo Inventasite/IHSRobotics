@@ -20,19 +20,31 @@ body {
 .logo {
   width: 10%;
   height: 10%;
-  margin-left: 300px;
+  margin-left: 500px;
 }
 
 .title {
+  width: 20%;
+  height: 20%;
   padding-top: 40px;
 }
 
 .tabs {
   margin-left: -600px;
+  width: 10%;
+  height: 10%;
 }
 
 a {
   text-decoration: none;
   color: rgb(46,26,71);
+}
+
+.Home {
+  border: black solid 20px;
+  border-radius: 20px;
+  background-color:rgb(70, 70, 70);
+  width: 10%;
+  height: 20%;
 }
 
