@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Independence from './Independence.png';
+import Overdrive from './image (1).png';
 import Typewriter from "typewriter-effect";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           </ nav>
         </div>
 
-          <img className="logo" alt="logo" src={Independence} />
+          <img className="logo" alt="logo" src={Overdrive} />
           <div className="title">
             <Typewriter
               onInit={(typewriter) => {
@@ -29,10 +29,16 @@ function App() {
         </div>
 
         <div className="Home">
-          Hello
+          <h2>Home</h2>
         </div>
-        <div className="About"></div>
-        <div className="Contact"></div>
+
+        <div className="About">
+          <h2>Awards</h2>
+        </div>
+
+        <div className="Contact">
+          <h2>Contact</h2>
+        </div>
     </div>
   );
 }
