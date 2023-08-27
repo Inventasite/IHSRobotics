@@ -26,12 +26,8 @@ function App() {
                   .start();
               } } />
           </div>
-      </div>
+        </div>
 
-<<<<<<< HEAD
-      <div className="Home">
-        <div className = "Home1">
-=======
         <h2 className="homeTitle">H O M E</h2>
         <div className="Home">
           <br></br>
@@ -51,11 +47,7 @@ function App() {
           <br></br>
           <p>Here's our interest form</p>
           <p>Contact form here</p>
->>>>>>> 529d9798270345cb44980712522b83a09195e81b
         </div>
-      </div>
-      <div className="About"></div>
-      <div className="Contact"></div>
     </div>
   );
 }
