@@ -28,20 +28,23 @@ function App() {
           </div>
         </div>
 
-        <h2 className="homeTitle">Home</h2>
+        <h2 className="homeTitle">H O M E</h2>
         <div className="Home">
+          <br></br>
           <p>Here are our team members</p>
           <p>Here are our awards</p>
         </div>
 
-        <h2 className = "aboutTitle">About</h2>
+        <h2 className = "aboutTitle">A B O U T</h2>
         <div className="About">
+          <br></br>
           <p>Here are our robots</p>
 
         </div>
 
-        <h2 className = "contactTitle">Contact</h2>
+        <h2 className = "contactTitle">C O N T A C T</h2>
         <div className="Contact">
+          <br></br>
           <p>Here's our interest form</p>
           <p>Contact form here</p>
         </div>
