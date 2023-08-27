@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/IHSRobotics/static/css/main.b24140c7.css",
+    "main.js": "/IHSRobotics/static/js/main.5e8e3bbe.js",
+    "static/js/787.672ceb4f.chunk.js": "/IHSRobotics/static/js/787.672ceb4f.chunk.js",
+    "static/media/robBack.png": "/IHSRobotics/static/media/robBack.e7e00297e3b1b42878f4.png",
+    "static/media/image (1).png": "/IHSRobotics/static/media/image (1).2b2a1bcee4b74c85d3f0.png",
+    "index.html": "/IHSRobotics/index.html",
+    "main.b24140c7.css.map": "/IHSRobotics/static/css/main.b24140c7.css.map",
+    "main.5e8e3bbe.js.map": "/IHSRobotics/static/js/main.5e8e3bbe.js.map",
+    "787.672ceb4f.chunk.js.map": "/IHSRobotics/static/js/787.672ceb4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24140c7.css",
+    "static/js/main.5e8e3bbe.js"
+  ]
+}
