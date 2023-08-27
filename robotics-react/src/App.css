@@ -20,11 +20,7 @@ body {
 .logo {
   width: 10%;
   height: 10%;
-<<<<<<< HEAD
   margin-left: 200px;
-=======
-  margin-left: 500px;
->>>>>>> 540ac6ecf3379066a10af99cd4acf4890289b061
 }
 
 .title {
@@ -44,7 +40,6 @@ a {
   color: rgb(46,26,71);
 }
 
-<<<<<<< HEAD
 .Home1 {
   position: center;
   margin-left: 600px;
@@ -62,66 +57,4 @@ a {
       0 0 50px #2c003a,
       -10px 0 80px rgb(47, 0, 75),
       10px 0 80px rgb(37, 0, 61);
-=======
-.homeTitle {
-  text-align: center;
-  margin-right: 100px;
-  color: gray;
-  font-size: 50px;
-}
-
-.Home {
-  background-color: rgb(141, 61, 165);
-  border-radius: 30px;
-  color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
-.aboutTitle {
-  text-align: center;
-  margin-right: 100px;
-  color: gray;
-  font-size: 50px;
-}
-
-.About {
-  background-color: rgb(141, 61, 165);
-  border-radius: 30px;
-  color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
-.contactTitle {
-  text-align: center;
-  margin-right: 100px;
-  color: gray;
-  font-size: 50px;
-}
-
-.Contact {
-  background-color: rgb(141, 61, 165);
-  border-radius: 30px;
-  color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
-p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
->>>>>>> 540ac6ecf3379066a10af99cd4acf4890289b061
 }
