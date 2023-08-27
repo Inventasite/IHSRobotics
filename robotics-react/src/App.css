@@ -8,7 +8,7 @@ body {
 .banner {
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(46,26,71);
+  color: rgb(141, 61, 165);
   font-size: xx-large;
   display: inline-flex;
   margin: auto;
@@ -35,9 +35,16 @@ body {
   height: 10%;
 }
 
+h2 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#000000, #ce0fce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 a {
   text-decoration: none;
-  color: rgb(46,26,71);
+  color: rgb(141,61,165);
 }
 
 .Home1 {
