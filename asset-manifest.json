@@ -1,17 +1,16 @@
 {
-  "files": {
-    "main.css": "/IHSRobotics/static/css/main.b24140c7.css",
-    "main.js": "/IHSRobotics/static/js/main.5e8e3bbe.js",
-    "static/js/787.672ceb4f.chunk.js": "/IHSRobotics/static/js/787.672ceb4f.chunk.js",
-    "static/media/robBack.png": "/IHSRobotics/static/media/robBack.e7e00297e3b1b42878f4.png",
-    "static/media/image (1).png": "/IHSRobotics/static/media/image (1).2b2a1bcee4b74c85d3f0.png",
-    "index.html": "/IHSRobotics/index.html",
-    "main.b24140c7.css.map": "/IHSRobotics/static/css/main.b24140c7.css.map",
-    "main.5e8e3bbe.js.map": "/IHSRobotics/static/js/main.5e8e3bbe.js.map",
-    "787.672ceb4f.chunk.js.map": "/IHSRobotics/static/js/787.672ceb4f.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.b24140c7.css",
-    "static/js/main.5e8e3bbe.js"
-  ]
+  "main.css": "/IHSRobotics/static/css/main.a0775c34.chunk.css",
+  "main.js": "/IHSRobotics/static/js/main.ea560057.chunk.js",
+  "main.js.map": "/IHSRobotics/static/js/main.ea560057.chunk.js.map",
+  "static/js/1.3f5a8f4c.chunk.js": "/IHSRobotics/static/js/1.3f5a8f4c.chunk.js",
+  "static/js/1.3f5a8f4c.chunk.js.map": "/IHSRobotics/static/js/1.3f5a8f4c.chunk.js.map",
+  "static/js/2.d5845aa9.chunk.js": "/IHSRobotics/static/js/2.d5845aa9.chunk.js",
+  "static/js/2.d5845aa9.chunk.js.map": "/IHSRobotics/static/js/2.d5845aa9.chunk.js.map",
+  "runtime~main.js": "/IHSRobotics/static/js/runtime~main.8e569147.js",
+  "runtime~main.js.map": "/IHSRobotics/static/js/runtime~main.8e569147.js.map",
+  "static/media/image (1).png": "/IHSRobotics/static/media/image (1).042f1619.png",
+  "static/css/main.a0775c34.chunk.css.map": "/IHSRobotics/static/css/main.a0775c34.chunk.css.map",
+  "index.html": "/IHSRobotics/index.html",
+  "precache-manifest.0d65fed10b980c834ec71d0a672e6e05.js": "/IHSRobotics/precache-manifest.0d65fed10b980c834ec71d0a672e6e05.js",
+  "service-worker.js": "/IHSRobotics/service-worker.js"
 }
