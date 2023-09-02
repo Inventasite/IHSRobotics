@@ -1,110 +1,134 @@
+/* App.css */
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: black;
-  background-image: url('robBack.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.triangles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.triangle-background {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: -webkit-linear-gradient(#ff00ff, #ff99ff);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  opacity: 0.5;
+  animation: moveTriangle 5s linear infinite, spinTriangle 2s linear infinite;
+  transform-origin: center;
+  left: -20px;
+  top: calc(var(--position) * calc(100vh - 20px));
+  animation-delay: calc(-0.1s * var(--index));
+}
+
+@keyframes moveTriangle {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: calc(100vw + 20px);
+  }
+}
+
+@keyframes spinTriangle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 15%;
+  height: auto;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .banner {
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(141, 61, 165);
-  font-size: xx-large;
-  display: inline-flex;
-  margin: auto;
-  width: 60%;
-  padding-top: 50px;
-  padding-left: 700px;
-}
-
-.logo {
-  width: 10%;
-  height: 10%;
-  margin-left: 500px;
-}
-
-.title {
-  width: 20%;
-  height: 20%;
-  padding-top: 40px;
+  font-size: 4vw;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .tabs {
-  margin-left: -600px;
-  width: 10%;
-  height: 10%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs a {
+  font-size: 2vw;
+  text-decoration: none;
+  color: rgb(141, 61, 165);
+  background: -webkit-linear-gradient(#ff00ff, #ff99ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+  position: relative;
+  margin: 10px;
+}
+
+.tabs a:hover {
+  border-bottom: 7px solid purple;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 h2 {
-  font-size: 72px;
+  font-size: 3vw;
   background: -webkit-linear-gradient(#000000, #ce0fce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(141,61,165);
-}
-
-.homeTitle {
-  text-align: center;
-  margin-right: 100px;
-  color: gray;
-  font-size: 50px;
-}
-
-.Home {
-  background-color: rgb(141, 61, 165);
-  border-radius: 30px;
-  color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
-.aboutTitle {
-  text-align: center;
-  margin-right: 100px;
-  color: gray;
-  font-size: 50px;
-}
-
-.About {
-  background-color: rgb(141, 61, 165);
-  border-radius: 30px;
-  color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
+.homeTitle,
+.aboutTitle,
 .contactTitle {
+  font-size: 3vw;
   text-align: center;
-  margin-right: 100px;
   color: gray;
-  font-size: 50px;
 }
 
+.Home,
+.About,
 .Contact {
-  background-color: rgb(141, 61, 165);
+  background-color: rgba(141, 61, 165, 0.5);
   border-radius: 30px;
   color: #fff;
-  opacity: .5;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 400px;
-}
-
-p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: left;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
