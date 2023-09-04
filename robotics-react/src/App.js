@@ -4,21 +4,9 @@ import Overdrive from './image (1).png';
 import Typewriter from 'typewriter-effect';
 
 const App = () => {
-  // Generate an array of triangles
-  const triangles = Array.from({ length: 50 }, (_, index) => (
-    <div
-      key={index}
-      className="triangle-background"
-      style={{
-        '--index': index,
-        '--position': Math.random(),
-      }}
-    />
-  ));
-
   return (
     <div className="content">
-      {triangles} {/* Render the spinning triangles */}
+      
       <div className="banner">
         <div className="tabs">
           <nav>

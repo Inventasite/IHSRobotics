@@ -1,53 +1,12 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
+  background: url(robBack.png);
   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   position: relative;
-}
-
-.triangles-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.triangle-background {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: -webkit-linear-gradient(#ff00ff, #ff99ff);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  opacity: 0.5;
-  animation: moveTriangle 5s linear infinite, spinTriangle 2s linear infinite;
-  transform-origin: center;
-  left: -20px;
-  top: calc(var(--position) * calc(100vh - 20px));
-  animation-delay: calc(-0.1s * var(--index));
-}
-
-@keyframes moveTriangle {
-  0% {
-    left: -20px;
-  }
-  100% {
-    left: calc(100vw + 20px);
-  }
-}
-
-@keyframes spinTriangle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .content {
@@ -64,7 +23,7 @@ body {
 
 .logo {
   width: 15%;
-  height: auto;
+  height: 15%;
   margin: 20px 0;
   text-align: center;
 }
@@ -86,7 +45,7 @@ body {
 }
 
 .tabs a {
-  font-size: 2vw;
+  font-size: 60%;
   text-decoration: none;
   color: rgb(141, 61, 165);
   background: -webkit-linear-gradient(#ff00ff, #ff99ff);
