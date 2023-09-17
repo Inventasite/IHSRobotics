@@ -9,13 +9,23 @@ body {
   position: relative; 
 }
 
-.container_left {
+.Awards_Large {
+  margin: none;
+  padding: none;
+}
+
+.description {
   display: flex;
-  justify-content: center; /* Space elements evenly */
-  align-items: left; /* Center vertically */
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.container2{
+  display: flex;
+  align-items: center; /* Center vertically */
   column-gap: 30px;
   width: 100%;
-  padding: 20px;
+  padding-left: 170px;
 }
 
 .container {
@@ -24,6 +34,24 @@ body {
   align-items: center; /* Center vertically */
   column-gap: 30px;
   width: 100%;
+  padding: 20px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center; /* Space elements evenly */
+  align-items: center; /* Center vertically */
+  column-gap: 30px;
+  width: 100%;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center; /* Space elements evenly */
+  align-items: center; /* Center vertically */
+  column-gap: 30px;
   padding: 20px;
 }
 
@@ -39,18 +67,20 @@ body {
   z-index: 1;
 }
 
-.line1 {
-  width: 50%;
-  margin-right: 10px;
-  color: #b40cb4;
-  border-width: 4px;
-  border: 0;
+.line{
+  width: 10%;
+  margin: 0px;
+  border: none;
+  height: 5px;  
+  background-color: #b40cb496;
+  
 }
 
 .mission_statement {
   width: 15%;
   height: 15%;
 }
+
 .logo {
   width: 15%;
   height: 15%;
@@ -64,7 +94,17 @@ body {
   color: rgb(141, 61, 165);
   font-size: 4vw;
   width: 80%;
-  padding: 20px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.banner2 {
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(141, 61, 165);
+  font-size: 4vw;
+  width: 80%;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -74,12 +114,17 @@ body {
   padding: 0;
 }
 
-.tabs a,
-.read_more {
+.tabs2 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs a {
   font-size: 60%;
   text-decoration: none;
-  color: rgb(141, 61, 165);
-  background: -webkit-linear-gradient(#ff00ff, #ff99ff);
+  color: rgba(141, 61, 165, 0.721);
+  background: -webkit-linear-gradient(#ff00ffc1, #ff99ff91);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
@@ -87,18 +132,55 @@ body {
   margin: 10px;
 }
 
-.tabs a:hover,
-.read_more {
-  border-bottom: 7px solid purple;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
+.tabs2 a {
+  font-size: 60%;
+  text-decoration: none;
+  color: rgba(141, 61, 165, 0.721);
+  background: -webkit-linear-gradient(#ff00ffc1, #ff99ff91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+  position: relative;
+  margin: 0px;
 }
 
-h1,
-p {
+.tabs a:hover{
+  border-bottom: 7px solid purple;
+  width: 50%;
+  text-align: center;
+  background-color: #ccc;
+}
+
+.tabs2 a:hover {
+  border-bottom: 7px solid purple;
+  width: 50%;
+  text-align: left;
+  background-color: #ccc;
+}
+
+h1 {
   text-align: center;
   color: rgb(147, 0, 215);
+}
+
+h4 {
+  text-align: left;
+  color: rgb(191, 160, 205);
+}
+
+.left {
+  text-align: left;
+  color: rgb(147, 0, 215);
+}
+
+p {
+  text-align: left;
+  color: rgb(147, 0, 215);
+}
+
+.buildP {
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -108,9 +190,25 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.ourRobots {
+  font-size: 4vw;
+  background: -webkit-linear-gradient(#ce0fce, #160136);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+.build {
+font-size: 4vw;
+color: #4c0078;
+text-align: center;
+}
+
 .homeTitle,
 .aboutTitle,
-.contactTitle {
+.contactTitle,
+.ourrobotstitle {
   font-size: 5vw;
   text-align: center;
   color: gray;
@@ -118,7 +216,6 @@ h2 {
 
 .Home,
 .Contact {
-  background-color: rgba(141, 61, 165, 0.5);
   border-radius: 30px;
   color: #fff;
   width: 90%;
@@ -127,6 +224,40 @@ h2 {
   margin: 20px auto;
   padding: 20px;
   box-sizing: border-box;
+  display: inline-block;
+    vertical-align: text-top;
+
+}
+
+.purp_con2 {
+  background-color: rgba(141, 61, 165, 0.5);
+  border-radius: 30px;
+  color: #fff;
+  width: 90%;
+  max-width: 650px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 40px;
+}
+
+.purp_con {
+  background-color: rgba(141, 61, 165, 0.5);
+  border-radius: 30px;
+  color: #fff;
+  width: 90%;
+  max-width: 650px;
+  text-align: left;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.AwardBox{
+  background-color: rgba(141, 61, 165, 0.5);
+  color: #fff;
+   text-align: center;
 }
 
 .box1,
@@ -147,3 +278,5 @@ h2 {
 .adress {
   font-size:2vw;
 }
+
+
