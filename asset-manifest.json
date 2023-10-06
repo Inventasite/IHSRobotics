@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/IHSRobotics/static/css/main.5f149a77.css",
+    "main.js": "/IHSRobotics/static/js/main.0a003193.js",
+    "static/js/787.672ceb4f.chunk.js": "/IHSRobotics/static/js/787.672ceb4f.chunk.js",
+    "static/media/22-23_Robot.png": "/IHSRobotics/static/media/22-23_Robot.268bdbaee0475a548c0a.png",
+    "static/media/Awards_group.png": "/IHSRobotics/static/media/Awards_group.047e72188e4518390f7d.png",
+    "static/media/Overdrive_Logo.png": "/IHSRobotics/static/media/Overdrive_Logo.2b2a1bcee4b74c85d3f0.png",
+    "static/media/Independence_Logo.png": "/IHSRobotics/static/media/Independence_Logo.b0a93de0a8c9840db830.png",
+    "static/media/mission_statement.png": "/IHSRobotics/static/media/mission_statement.94af1260c82bcc416e9d.png",
+    "static/media/First_Tech_Challenge_Logo.png": "/IHSRobotics/static/media/First_Tech_Challenge_Logo.bdacd25756def031a82b.png",
+    "static/media/robBack.png": "/IHSRobotics/static/media/robBack.b9c430cb9ff1751d5468.png",
+    "static/media/robointake21-22.png": "/IHSRobotics/static/media/robointake21-22.77ada457fd822d9a5aa2.png",
+    "static/media/22-23_claw.png": "/IHSRobotics/static/media/22-23_claw.04595d3d27be2ba3ef61.png",
+    "static/media/22-23_lift.png": "/IHSRobotics/static/media/22-23_lift.8ce1f3ef992fb4c64b18.png",
+    "index.html": "/IHSRobotics/index.html",
+    "main.5f149a77.css.map": "/IHSRobotics/static/css/main.5f149a77.css.map",
+    "main.0a003193.js.map": "/IHSRobotics/static/js/main.0a003193.js.map",
+    "787.672ceb4f.chunk.js.map": "/IHSRobotics/static/js/787.672ceb4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f149a77.css",
+    "static/js/main.0a003193.js"
+  ]
+}
