@@ -21,12 +21,11 @@ import capper22 from "./images/capper21-22.png";
 import drivetrain22 from "./images/drivetrain21-22.png";
 import intake22 from "./images/robointake21-22.png";
 import spinner22 from "./images/spinner21-22.png";
-
+import 'animate.css';
 
 const App = () => {
   return (
     <div className="content">
-      
       <div className="banner">
         <div className="tabs">
           <nav>
@@ -86,7 +85,7 @@ const App = () => {
             src={Independence_Logo}
             alt="Independence Logo"
           />
-          <div>
+          <div className="ddescription">
             <h1 className="left">We Are A Veteran Robotics Team:</h1>
             <div clasname="description">
             <p className="team_Description">
@@ -138,7 +137,7 @@ const App = () => {
         <div className="container">
             <div className="vertcontainer">
                 <h1>What We Do:</h1>
-                <div className="purp_con">
+                <div className="box1">
                   <p>Every year, First Tech Challenge, hosts a new game with specific rules and a game field that we need to design, program, and build a new robot for.</p> 
                 </div>
             </div>
@@ -305,7 +304,7 @@ const App = () => {
                 <p className="buildP">2 carousel spinners tuned to the best possible speed use servos to turn the carousel</p>
                 <p>Capping System</p>
                 <img src={capper22} alt="capping system"></img>
-                <p className="buildP">A servo with is able to quickly attach to the team shipping element using a magnet and detach it with a twist from the robot</p>
+                <p className="buildP">A servo which is able to quickly attach to the team shipping element using a magnet and detach it with a twist from the robot</p>
             </div>
         </div>
       
@@ -319,10 +318,13 @@ const App = () => {
       <div id="Contact" className="Contact">
         <div className="contactForm">
             <br></br>
-            <input className="input1" placeHolder="Name" /><br></br>
-            <input className="input1" placeHolder="Grade" /><br></br>
-            <input className="input1" placeHolder="Email" /><br></br>
-            <input className="submitButt" type="Submit" />
+            <div className="formDetails">
+              <input className="input1" placeHolder="Name" /><br></br>
+              <input className="input1" placeHolder="Grade" /><br></br>
+              <input className="input1" placeHolder="Email" /><br></br>
+              <input className="input2" placeHolder="What would you like to tell us?" /><br></br>
+              <input className="submitButt" type="Submit" />
+            </div>
         </div>
       </div>
     
