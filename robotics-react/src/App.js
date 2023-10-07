@@ -1,5 +1,7 @@
 import "./App.css";
+import { useState } from "react";
 import React from "react";
+import emailjs from 'emailjs-com';
 import Overdrive_Logo from "./images/Overdrive_Logo.png";
 import Typewriter from "typewriter-effect";
 import Independence_Logo from "./images/Independence_Logo.png";
@@ -24,6 +26,33 @@ import spinner22 from "./images/spinner21-22.png";
 import 'animate.css';
 
 const App = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    grade: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+      });
+  };
+
   return (
     <div className="content">
       <div className="banner">
@@ -319,11 +348,34 @@ const App = () => {
         <div className="contactForm">
             <br></br>
             <div className="formDetails">
-              <input className="input1" placeHolder="Name" /><br></br>
-              <input className="input1" placeHolder="Grade" /><br></br>
-              <input className="input1" placeHolder="Email" /><br></br>
-              <input className="input2" placeHolder="What would you like to tell us?" /><br></br>
-              <input className="submitButt" type="Submit" />
+              <input 
+                className="input1" 
+                placeHolder="Name" 
+                value={formData.name}
+                onChange={handleChange}
+              /><br></br>
+
+              <input 
+                className="input1" 
+                placeHolder="Grade" 
+                value={formData.grade}
+                onChange={handleChange}
+              /><br></br>
+
+              <input 
+                className="input1" 
+                placeHolder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              /><br></br>
+
+              <textarea 
+                className="input2" 
+                placeHolder="What would you like to tell us?"
+                value={formData.message}
+                onChange={handleChange}
+                 /><br></br>
+              <input className="submitButt" type="Submit" value="submit" />
             </div>
         </div>
       </div>
