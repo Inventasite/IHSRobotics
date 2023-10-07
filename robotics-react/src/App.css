@@ -1,12 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: url(robBack.png);
-  background-color: black;
-  background-repeat: no-repeat;
+  background: url(FTC_Website_BG_1_1850x1080.png);
   background-size: cover;
-  overflow-x: hidden;
-  position: relative; 
+  background-repeat: no-repeat ; 
+  background-position: center center;
+  background-attachment: fixed;
+
 }
 
 .Awards_Large {
