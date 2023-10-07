@@ -23,7 +23,6 @@ import capper22 from "./images/capper21-22.png";
 import drivetrain22 from "./images/drivetrain21-22.png";
 import intake22 from "./images/robointake21-22.png";
 import spinner22 from "./images/spinner21-22.png";
-import 'animate.css';
 
 const App = () => {
   const [formData, setFormData] = useState({
