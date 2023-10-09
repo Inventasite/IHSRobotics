@@ -345,6 +345,7 @@ text-align: center;
   margin-bottom: 10px;
   width: 1000px;
   height: 100px;
+  max-width: 90%;
 }
 
 .submitButt {
@@ -426,6 +427,7 @@ text-align: center;
   .input1,
   .input2,
   .submitButt {
+    max-width: 90%;
     width: 75%;
   }
 }
