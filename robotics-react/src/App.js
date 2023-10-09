@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import emailjs from 'emailjs-com';
 import Overdrive_Logo from "./images/Overdrive_Logo.png";
@@ -52,6 +52,43 @@ const App = () => {
       });
   };
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+  
+    const animateWhenVisible = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+  
+    const observerList = [
+      new IntersectionObserver(animateWhenVisible, options),
+      new IntersectionObserver(animateWhenVisible, options),
+    ];
+  
+    const elementsToAnimate = [
+      document.querySelector('.purp_con'),
+      document.querySelector('.purp_con2'),
+    ];
+  
+    elementsToAnimate.forEach((element, index) => {
+      if (element) {
+        observerList[index].observe(element);
+      }
+    });
+  
+    return () => {
+      observerList.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+  
   return (
     <div className="content">
       <div className="banner">
