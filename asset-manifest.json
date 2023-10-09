@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IHSRobotics_Website/static/css/main.f50db9dd.css",
-    "main.js": "/IHSRobotics_Website/static/js/main.044a3e9d.js",
+    "main.css": "/IHSRobotics_Website/static/css/main.c1fba07b.css",
+    "main.js": "/IHSRobotics_Website/static/js/main.a3928911.js",
     "static/js/787.672ceb4f.chunk.js": "/IHSRobotics_Website/static/js/787.672ceb4f.chunk.js",
     "static/media/22-23_Robot.png": "/IHSRobotics_Website/static/media/22-23_Robot.268bdbaee0475a548c0a.png",
     "static/media/Awards_group.png": "/IHSRobotics_Website/static/media/Awards_group.047e72188e4518390f7d.png",
@@ -14,12 +14,12 @@
     "static/media/22-23_claw.png": "/IHSRobotics_Website/static/media/22-23_claw.04595d3d27be2ba3ef61.png",
     "static/media/22-23_lift.png": "/IHSRobotics_Website/static/media/22-23_lift.8ce1f3ef992fb4c64b18.png",
     "index.html": "/IHSRobotics_Website/index.html",
-    "main.f50db9dd.css.map": "/IHSRobotics_Website/static/css/main.f50db9dd.css.map",
-    "main.044a3e9d.js.map": "/IHSRobotics_Website/static/js/main.044a3e9d.js.map",
+    "main.c1fba07b.css.map": "/IHSRobotics_Website/static/css/main.c1fba07b.css.map",
+    "main.a3928911.js.map": "/IHSRobotics_Website/static/js/main.a3928911.js.map",
     "787.672ceb4f.chunk.js.map": "/IHSRobotics_Website/static/js/787.672ceb4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f50db9dd.css",
-    "static/js/main.044a3e9d.js"
+    "static/css/main.c1fba07b.css",
+    "static/js/main.a3928911.js"
   ]
 }
