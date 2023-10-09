@@ -1,10 +1,8 @@
 
 body {
-  background: url(FTC_Website_BG_1_1850x1080.png);
+  background: url(robBack.png);
   background-size: cover;
-  background-repeat: no-repeat ; 
-  background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
 
 }
 
@@ -66,7 +64,7 @@ body {
   z-index: 1;
 }
 
-.line{
+.line {
   width: 10%;
   margin: 0px;
   border: none;
@@ -365,4 +363,70 @@ text-align: center;
   margin-top: 70px;
 }
 
+@media screen and (max-width: 768px) {
+  .container2,
+  .container,
+  .container3,
+  .container4,
+  .content,
+  .banner,
+  .banner2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .tabs a,
+  .tabs2 a {
+    font-size: 3vw;
+  }
+
+  .tabs a:hover,
+  .tabs2 a:hover {
+    border-bottom: 4px solid purple;
+  }
+
+  .line {
+    width: 20%;
+  }
+
+  .mission_statement,
+  .logo {
+    width: 30%;
+    height: auto;
+  }
+
+  .homeTitle,
+  .aboutTitle,
+  .contactTitle,
+  .ourrobotstitle {
+    font-size: 4vw;
+  }
+
+  .Home,
+  .Contact {
+    max-width: 90%;
+  }
+
+  .purp_con,
+  .purp_con2 {
+    margin-left: 0;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+  }
+
+  .input1,
+  .input2,
+  .submitButt {
+    width: 75%;
+  }
+}
 
