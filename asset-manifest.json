@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IHSRobotics_Website/static/css/main.c1fba07b.css",
-    "main.js": "/IHSRobotics_Website/static/js/main.a3928911.js",
+    "main.js": "/IHSRobotics_Website/static/js/main.cb68602f.js",
     "static/js/787.672ceb4f.chunk.js": "/IHSRobotics_Website/static/js/787.672ceb4f.chunk.js",
     "static/media/22-23_Robot.png": "/IHSRobotics_Website/static/media/22-23_Robot.268bdbaee0475a548c0a.png",
     "static/media/Awards_group.png": "/IHSRobotics_Website/static/media/Awards_group.047e72188e4518390f7d.png",
@@ -15,11 +15,11 @@
     "static/media/22-23_lift.png": "/IHSRobotics_Website/static/media/22-23_lift.8ce1f3ef992fb4c64b18.png",
     "index.html": "/IHSRobotics_Website/index.html",
     "main.c1fba07b.css.map": "/IHSRobotics_Website/static/css/main.c1fba07b.css.map",
-    "main.a3928911.js.map": "/IHSRobotics_Website/static/js/main.a3928911.js.map",
+    "main.cb68602f.js.map": "/IHSRobotics_Website/static/js/main.cb68602f.js.map",
     "787.672ceb4f.chunk.js.map": "/IHSRobotics_Website/static/js/787.672ceb4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1fba07b.css",
-    "static/js/main.a3928911.js"
+    "static/js/main.cb68602f.js"
   ]
 }
