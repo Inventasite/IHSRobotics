@@ -1,5 +1,7 @@
 import "./App.css";
+import { useState } from "react";
 import React from "react";
+import emailjs from 'emailjs-com';
 import Overdrive_Logo from "./images/Overdrive_Logo.png";
 import Typewriter from "typewriter-effect";
 import Independence_Logo from "./images/Independence_Logo.png";
@@ -22,12 +24,39 @@ import drivetrain22 from "./images/drivetrain21-22.png";
 import intake22 from "./images/robointake21-22.png";
 import spinner22 from "./images/spinner21-22.png";
 import Header from "./Header";
+
 const App = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    grade: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+      });
+  };
+
   return (
     <div>
     <Header/>
     <div className="content">
-      
       <div className="banner">
         {/* <div className="tabs">
           <nav>
@@ -88,7 +117,7 @@ const App = () => {
             src={Independence_Logo}
             alt="Independence Logo"
           />
-          <div>
+          <div className="ddescription">
             <h1 className="left">We Are A Veteran Robotics Team:</h1>
             <div clasname="description">
             <p className="team_Description">
@@ -103,7 +132,7 @@ const App = () => {
               <div className="tabs2">
                 <nav>
                   <a href="#About" className="tabLink">
-                    ReadMore
+                    Read More
                   </a>
                 </nav>
               </div>
@@ -140,12 +169,12 @@ const App = () => {
         <div className="container">
             <div className="vertcontainer">
                 <h1>What We Do:</h1>
-                <div className="purp_con">
+                <div className="box1">
                   <p>Every year, First Tech Challenge, hosts a new game with specific rules and a game field that we need to design, program, and build a new robot for.</p> 
                 </div>
             </div>
             <img className="First_Tech_Challenge" alt="FTC Logo" src={First_Tech_Challenge} ></img>
-      </div>
+        </div>
       <div id="container" className="container">
         <div>
           <h1>Outreach</h1>
@@ -251,9 +280,12 @@ const App = () => {
 
 <br></br>
 
-<div id="Our Robots" className="Our Robots">
+<div id="Our Robots" className="ourRobotsContainer">
       <h2 className="ourrobotstitle">OUR ROBOTS</h2>
-      <div className="container">
+      
+      <div className="purp_con">
+        <p>Our build team works on assembling goBilda parts and motors with the REV hardware parts to create the robot</p>
+        <div className="container">
             <div>
             <h3 className="ourRobots">2022-2023</h3>
             <h3 className="ourRobots">Season</h3>
@@ -261,9 +293,6 @@ const App = () => {
             <img src={Robot23} alt="Robot23"></img>
       </div>
       <br></br>
-      <h3 className="build">Build</h3>
-      <div className="purp_con2">
-        <p>Our build team works on assembling goBilda parts and motors with the REV hardware parts to create the robot</p>
         <div className="container4">
             <div>
                 <img src={drivetrain23} alt="drivetrain"></img>
@@ -278,20 +307,17 @@ const App = () => {
                 <p className="buildP">CAD Model</p>
             </div>
         </div>
-      
       </div>
-      <br></br>
-      <div className="container">
+      
+      <div className="purp_con2">
+        <p>Our build team works on assembling goBilda parts and motors with the REV hardware parts to create the robot</p>
+        <div className="container">
             <div>
             <h3 className="ourRobots">2021-2022</h3>
             <h3 className="ourRobots">Season</h3>
-            <p>DEMARCUS COUSINS THE III</p>
             </div>
             <img src={Robot23} alt="Robot23"></img>
       </div>
-      <h3 className="build">Build</h3>
-      <div className="purp_con2">
-        <p>Our build team works on assembling goBilda parts and motors with the REV hardware parts to create the robot</p>
         <div className="container4">
             <div>
                 <p>Drivetrain</p>
@@ -310,7 +336,7 @@ const App = () => {
                 <p className="buildP">2 carousel spinners tuned to the best possible speed use servos to turn the carousel</p>
                 <p>Capping System</p>
                 <img src={capper22} alt="capping system"></img>
-                <p className="buildP">A servo with is able to quickly attach to the team shipping element using a magnet and detach it with a twist from the robot</p>
+                <p className="buildP">A servo which is able to quickly attach to the team shipping element using a magnet and detach it with a twist from the robot</p>
             </div>
         </div>
       
@@ -320,11 +346,41 @@ const App = () => {
 </div>
       
 <br></br>
-      <h2 className="contactTitle">CONTACT</h2>
+<h2 className="contactTitle">CONTACT</h2>
       <div id="Contact" className="Contact">
-        <br />
-        <p>Here's our interest form</p>
-        <p>Contact form here</p>
+        <div className="contactForm">
+            <br></br>
+            <div className="formDetails">
+              <input 
+                className="input1" 
+                placeHolder="Name" 
+                value={formData.name}
+                onChange={handleChange}
+              /><br></br>
+
+              <input 
+                className="input1" 
+                placeHolder="Grade" 
+                value={formData.grade}
+                onChange={handleChange}
+              /><br></br>
+
+              <input 
+                className="input1" 
+                placeHolder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              /><br></br>
+
+              <textarea 
+                className="input2" 
+                placeHolder="What would you like to tell us?"
+                value={formData.message}
+                onChange={handleChange}
+                 /><br></br>
+              <input className="submitButt" type="Submit" value="submit" />
+            </div>
+        </div>
       </div>
     
 </div></div>
