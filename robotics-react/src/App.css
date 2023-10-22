@@ -98,6 +98,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .banner2 {
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -112,6 +113,18 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(141, 61, 165);
+  background-color: rgba(141, 61, 165, 0.721);
+  font-size: 4vw;
+  width: 100%;
+  z-index: 999;
+  transition: 200ms;
+}
+.tabs.stick {
+  background-color:#4c0078;
 }
 
 .tabs2 {
@@ -278,5 +291,4 @@ text-align: center;
 .adress {
   font-size:2vw;
 }
-
 
