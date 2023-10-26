@@ -23,6 +23,7 @@ import capper22 from "./images/capper21-22.png";
 import drivetrain22 from "./images/drivetrain21-22.png";
 import intake22 from "./images/robointake21-22.png";
 import spinner22 from "./images/spinner21-22.png";
+import Header from "./Header";
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -90,9 +91,11 @@ const App = () => {
   }, []);
   
   return (
+    <div>
+    <Header/>
     <div className="content">
       <div className="banner">
-        <div className="tabs">
+        {/* <div className="tabs">
           <nav>
             <a href="#Home" className="tabLink">
               Home
@@ -107,7 +110,8 @@ const App = () => {
               Contact
             </a>
           </nav>
-        </div>
+        </div> */}
+        
 
         <img className="logo" alt="logo" src={Overdrive_Logo} />
         <div className="title">
@@ -416,7 +420,7 @@ const App = () => {
         </div>
       </div>
     
-</div>
+</div></div>
   );
 };
 
