@@ -44,7 +44,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+    emailjs.send('service_r2z0pbq', 'template_3rotm0t', formData, 'KIgzD7KrODgcataJA')
       .then((response) => {
         console.log('Email sent successfully!', response);
       })
@@ -388,6 +388,7 @@ const App = () => {
         <div className="contactForm">
             <br></br>
             <div className="formDetails">
+            <form onSubmit={handleSubmit}>
               <input 
                 className="input1" 
                 placeHolder="Name" 
@@ -416,6 +417,7 @@ const App = () => {
                 onChange={handleChange}
                  /><br></br>
               <input className="submitButt" type="Submit" value="submit" />
+              </form>
             </div>
         </div>
       </div>
